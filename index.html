@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enter Your Name</title>
+<style>
+    
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #c2a8a8;
+    }
+
+    .container {
+        border-radius: 10px;
+        border: 2px solid red;
+        text-align: center;
+        box-shadow: 21px 23px 5px 0px rgba(0,0,0,0.75);;
+    }
+
+    input[type="text"] {
+        padding: 10px;
+        width: 200px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        
+    }
+
+    input[type="submit"] {
+        padding: 10px 20px;
+        background-color: #ff0404;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: .5s;
+    }
+    input[type="submit"]:hover {
+        background-color: aqua;
+        font-size: 20px;
+        color: black;
+
+    }
+    @media screen and (max-width: 700px) {
+        .container {
+        width: 300px;
+        height: 250px;
+        border-radius: 10px;
+        border: 2px solid red;
+        text-align: center;
+        box-shadow: 21px 23px 5px 0px rgba(0,0,0,0.75);;
+    }
+    input[type="text"] {
+        margin-top: 70px;
+        padding: 10px;
+        width: 200px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        
+    }
+    input[type="submit"]:hover {
+        background-color: aqua;
+        font-size: 20px;
+        color: black;
+    }
+
+</style>
+</head>
+<body>
+<div class="container">
+    <form action="greeting.html" method="GET">
+        <input type="text" name="name" placeholder="Enter your first name only" required>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+</body>
+</html>

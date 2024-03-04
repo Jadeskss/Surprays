@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HAHAHAHA</title>
+<style>
+
+    
+    body {
+
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-image: url(fu.jpg);
+    }
+
+    .greeting-container {
+        font-size: 50px;
+        font-family: sans-serif;
+        text-align: center;
+        box-shadow: 21px 23px 5px 0px rgba(0,0,0,0.75);;
+        border: 2px solid red;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #ea2c2c;
+        text-transform: uppercase;
+        transition: .5s;
+    }
+    
+    
+    @media screen and (max-width: 700px) {
+        body {
+
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    background-image: url(fu2.jpg);
+}
+    }
+    .greeting-container {
+        color: aliceblue;
+        font-size: 25px;
+        font-family: sans-serif;
+        text-align: center;
+        box-shadow: 21px 23px 5px 0px rgba(0,0,0,0.75);;
+        border: 2px solid red;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #ea2c2c;
+        text-transform: uppercase;
+    }
+
+</style>
+</head>
+<body>
+<div class="greeting-container">
+    <script>
+       
+        const urlParams = new URLSearchParams(window.location.search);
+        const name = urlParams.get('name');
+
+
+        document.write('<h1>Fuck you, ' + name + '!</h1>');
+    </script>
+</div>
+</body>
+</html>
